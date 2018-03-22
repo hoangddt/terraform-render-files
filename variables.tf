@@ -42,6 +42,12 @@ variable "network_mtu" {
   default     = "1480"
 }
 
+variable "kube_dns_service_ip" {
+  description = "kube_dns_service_ip"
+  type        = "string"
+  default     = ""
+}
+
 variable "pod_cidr" {
   description = "CIDR IP range to assign Kubernetes pods"
   type        = "string"
